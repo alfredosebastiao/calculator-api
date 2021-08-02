@@ -11,12 +11,15 @@
 	<groupId>mz.alfredo</groupId>
 	<artifactId>calculator-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>pom</packaging>
 	<name>calculator-api</name>
 	<description>Calculator API Project With RabbitMQ for Spring Boot</description>
-	<properties>
-		<java.version>1.8</java.version>
-	</properties>
+
+	<modules>
+		<module>calculator</module>
+		<module>calculator-rest</module>
+	</modules>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -33,6 +36,17 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.amqp</groupId>
+			<artifactId>spring-amqp</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.amqp</groupId>
+			<artifactId>spring-rabbit</artifactId>
+		</dependency>
+
 	</dependencies>
 
 	<build>
