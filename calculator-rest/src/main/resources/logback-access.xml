@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <PatternLayout>
+                <pattern>
+                    %cyan(LOGBACK-ACCESS) : [%t] %cyan(URI REQUESTED) : %requestURL | %cyan(STATUS CODE) : %statusCode |
+                    BYTES SENT: %bytesSent | ELAPSED TIME: %elapsedTime
+                </pattern>>
+            </PatternLayout>
+        </encoder>
+    </appender>
+    <appender-ref ref="STDOUT"/>
+</configuration>
