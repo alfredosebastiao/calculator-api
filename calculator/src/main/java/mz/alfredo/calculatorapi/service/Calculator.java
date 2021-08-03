@@ -15,6 +15,11 @@ import java.math.RoundingMode;
 public class Calculator {
     private static final Logger LOGGER = LoggerFactory.getLogger(Calculator.class);
 
+    /**
+     * Function that listens to the RabbitMQ Message queue and performs the operation launched by REST api
+     * @param requestInput Request input from REST
+     * @return Request Output
+     */
     @RabbitListener(queues = Constants.QUEUE)
     public RequestOutput getRequestFromQueue(RequestInput requestInput) {
         LOGGER.info("getRequestFromQueue() Method started");
@@ -23,6 +28,11 @@ public class Calculator {
         return requestOutput;
     }
 
+    /**
+     * Function that calculate REST input
+     * @param requestInput Request input from REST
+     * @return Calculation result
+     */
     private BigDecimal calculate(RequestInput requestInput){
         switch (requestInput.getOperationType()){
             case "+": return  requestInput.getA().add(requestInput.getB());

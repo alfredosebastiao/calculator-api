@@ -1,5 +1,9 @@
 package mz.alfredo.calculatorapi.model;
 
+/**
+ * ENUM that represents REST operations available
+ * @author alfredosebastiao
+ */
 public enum OperationType {
 
     SUM("+"),

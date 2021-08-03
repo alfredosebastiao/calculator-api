@@ -3,6 +3,7 @@ package mz.alfredo.calculatorapi.utils;
 import org.springframework.context.annotation.Configuration;
 
 /**
+ * Class used to set all constants used on the module
  * @author alfredosebastiao
  */
 @Configuration

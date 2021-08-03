@@ -5,6 +5,10 @@ import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+/**
+ * UniqueRequestIdFilterConfiguration for Request Filter
+ * @author alfredosebastiao
+ */
 @Configuration
 public class UniqueRequestIdFilterConfiguration {
 

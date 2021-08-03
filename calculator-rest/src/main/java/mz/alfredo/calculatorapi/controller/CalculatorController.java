@@ -23,6 +23,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.math.BigDecimal;
 
+/**
+ * CalculatorController
+ * @author alfredosebastiao
+ */
 @Controller
 @EnableAutoConfiguration
 @RequestMapping(path = "/", produces = MediaType.APPLICATION_JSON_VALUE)

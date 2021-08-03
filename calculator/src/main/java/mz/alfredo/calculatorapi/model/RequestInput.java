@@ -8,6 +8,10 @@ import lombok.ToString;
 import java.io.Serializable;
 import java.math.BigDecimal;
 
+/**
+ * RequestInput POJO used to get the request params and operationType
+ * @author alfredosebastiao
+ */
 @Data
 @NoArgsConstructor
 @ToString

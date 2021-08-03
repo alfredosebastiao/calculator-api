@@ -12,6 +12,10 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.UUID;
 
+/**
+ * UniqueRequestIdFilter
+ * @author alfredosebastiao
+ */
 @Component
 public class UniqueRequestIdFilter extends OncePerRequestFilter {
 
