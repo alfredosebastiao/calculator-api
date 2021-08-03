@@ -5,8 +5,7 @@
         <encoder>
             <PatternLayout>
                 <pattern>
-                    %cyan(LOGBACK-ACCESS) : [%t] %cyan(URI REQUESTED) : %requestURL | %cyan(STATUS CODE) : %statusCode |
-                    BYTES SENT: %bytesSent | ELAPSED TIME: %elapsedTime
+                    %cyan(LOGBACK-ACCESS) : [%t] %cyan(URI REQUESTED) : %requestURL | %cyan(STATUS CODE) : %statusCode | BYTES SENT: %bytesSent | ELAPSED TIME: %elapsedTime
                 </pattern>>
             </PatternLayout>
         </encoder>
