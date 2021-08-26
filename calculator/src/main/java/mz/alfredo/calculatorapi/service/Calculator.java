@@ -1,5 +1,6 @@
 package mz.alfredo.calculatorapi.service;
 
+import mz.alfredo.calculatorapi.model.OperationType;
 import mz.alfredo.calculatorapi.model.RequestInput;
 import mz.alfredo.calculatorapi.model.RequestOutput;
 import mz.alfredo.calculatorapi.utils.Constants;
@@ -34,12 +35,12 @@ public class Calculator {
      * @param requestInput Request input from REST
      * @return Calculation result
      */
-    private BigDecimal calculate(RequestInput requestInput){
+    private BigDecimal calculate(RequestInput requestInput) {
         switch (requestInput.getOperationType()){
             case "+": return  requestInput.getA().add(requestInput.getB());
             case "-": return  requestInput.getA().subtract(requestInput.getB());
             case "x": return  requestInput.getA().multiply(requestInput.getB());
-            case "/": return  requestInput.getA().divide(requestInput.getB(), 2, RoundingMode.HALF_UP);
+            case "/": return  requestInput.getA().divide(requestInput.getB(), 2, RoundingMode.HALF_UP).stripTrailingZeros();
         }
         return new BigDecimal(0);
     }
