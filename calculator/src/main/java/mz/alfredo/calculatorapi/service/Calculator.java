@@ -24,6 +24,7 @@ public class Calculator {
     public RequestOutput getRequestFromQueue(RequestInput requestInput) {
         LOGGER.info("getRequestFromQueue() Method started");
         RequestOutput requestOutput = new RequestOutput(this.calculate(requestInput));
+        LOGGER.info("getRequestFromQueue() Method requestOutput: "+requestOutput);
         LOGGER.info("getRequestFromQueue() Method finished");
         return requestOutput;
     }
