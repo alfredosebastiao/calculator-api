@@ -1,6 +1,6 @@
 package mz.alfredo.calculatorapi.service;
 
-import mz.alfredo.calculatorapi.model.OperationType;
+
 import mz.alfredo.calculatorapi.model.RequestInput;
 import mz.alfredo.calculatorapi.model.RequestOutput;
 import mz.alfredo.calculatorapi.utils.Constants;

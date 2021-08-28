@@ -5,10 +5,16 @@ import mz.alfredo.calculatorapi.model.RequestInput;
 import mz.alfredo.calculatorapi.model.RequestOutput;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ContextConfiguration;
 
 
 import java.math.BigDecimal;
 
+@SpringBootTest(classes={mz.alfredo.calculatorapi.service.Calculator.class})
+@AutoConfigureMockMvc
+@ContextConfiguration
 public class CalculatorTests {
 
     @Test
